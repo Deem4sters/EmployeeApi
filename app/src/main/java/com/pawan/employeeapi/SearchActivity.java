@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.pawan.employeeapi.api.EmployeeAPI;
 import com.pawan.employeeapi.model.Employee;
+import com.pawan.employeeapi.url.URL;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -42,12 +43,7 @@ public class SearchActivity extends AppCompatActivity {
 
 
             private void loadData() {
-                Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl(Base_URL)
-                        .addConverterFactory(GsonConverterFactory.create())
-                        .build();
-
-                EmployeeAPI employeeAPI = retrofit.create(EmployeeAPI.class);
+                EmployeeAPI employeeAPI = URL.createInstance().create(EmployeeAPI.class);
                 Call<Employee> employeeCall = employeeAPI.getEmployeeByID(Integer.parseInt(etEmployeeNo.getText().toString()));
 
                 employeeCall.enqueue(new Callback<Employee>() {
