@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnShow"
+        android:textSize="18sp"
+        android:text="show all employee"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:textSize="18sp"
+        android:text="register employee"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSearch"
+        android:textSize="18sp"
+        android:text="search employee"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdateDelete"
+        android:textSize="18sp"
+        android:text="Upadate/delete employee"
+        android:layout_marginBottom="30dp"/>
+
+
+
+</LinearLayout>
